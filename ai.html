@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Management Portfolio</title>
+    <!-- Use Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc;
+            color: #1a202c;
+        }
+        .main-color-bg {
+            background-color: #0489b6;
+        }
+        .main-color-text {
+            color: #0489b6;
+        }
+        .main-color-border {
+            border-color: #0489b6;
+        }
+        .nav-link:hover {
+            color: #0489b6;
+            transition: color 0.3s ease-in-out;
+        }
+        .nav-link.active {
+            color: #0489b6;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 bg-white shadow-lg z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold main-color-text">Portfolio</a>
+            <div class="hidden md:flex space-x-8 text-gray-700 font-medium">
+                <a href="#about" class="nav-link">About Me</a>
+                <a href="#sample-works" class="nav-link">Sample Works</a>
+                <a href="#main-offering" class="nav-link">Services</a>
+                <a href="#case-studies" class="nav-link">Case Studies</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-4">
+            <div class="flex flex-col items-center space-y-4 text-gray-700 font-medium">
+                <a href="#about" class="nav-link mobile-link" onclick="toggleMenu()">About Me</a>
+                <a href="#sample-works" class="nav-link mobile-link" onclick="toggleMenu()">Sample Works</a>
+                <a href="#main-offering" class="nav-link mobile-link" onclick="toggleMenu()">Services</a>
+                <a href="#case-studies" class="nav-link mobile-link" onclick="toggleMenu()">Case Studies</a>
+                <a href="#contact" class="nav-link mobile-link" onclick="toggleMenu()">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-12">
+        
+        <!-- Hero Section -->
+        <section class="container mx-auto px-4 py-20 flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-12">
+            <div class="md:w-1/2">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">Turning Social Media into a Client-Getting Machine.</h1>
+                <p class="text-lg text-gray-600 mb-6 max-w-lg">I help businesses attract consistent clients through done-for-you social media management and client-focused Meta ads designed for sustainable growth. Let’s build a strategy that brings you leads, not just likes.</p>
+                <a href="https://calendar.app.google/tUGUu6RgPiopXZxS9" target="_blank" class="inline-block px-8 py-4 text-lg font-semibold text-white main-color-bg rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300">Let's Connect</a>
+            </div>
+            <div class="md:w-1/2">
+                <!-- Professional headshot image -->
+                <img src="https://imgur.com/zYUtLhN.png" alt="Professional headshot of the social media manager" class="w-full h-auto rounded-xl shadow-lg">
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="container mx-auto px-4 py-16">
+            <h2 class="text-4xl font-bold mb-8 text-center main-color-text">About Me</h2>
+            <div class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-lg text-gray-700">
+                <p class="text-lg leading-relaxed mb-4">My journey didn’t start with marketing right away. I came from customer service and admin roles, where I learned how to really listen, communicate clearly, and keep things running smoothly behind the scenes. From helping a motorcycle shop with sales + social media to handling customer escalations for big telecom brands, I discovered something important: connecting with people and solving problems is at the core of everything I do.</p>
+                <p class="text-lg leading-relaxed mb-4">When I stepped into social media management, I brought all of that with me. That’s why I started Sozhyls: because I know how overwhelming it can be to grow a business online.</p>
+                <p class="text-lg leading-relaxed mb-4">Now, I combine audience psychology + data-driven ads + creative content to help small and start-up businesses show up consistently, build trust with their audience, and turn social media into a client-getting machine.</p>
+                <p class="text-lg leading-relaxed mb-4">And here’s something personal: I have PCOS, and it’s taught me resilience and patience — the same qualities I bring into my work. Just like with health, building a brand takes the right strategy, consistency, and an understanding of what truly works for you.</p>
+                <p class="text-lg leading-relaxed">I believe that social media should work for you, not against you. My goal is simple: to take the stress and guesswork out of content and ads so you can focus on running your business with confidence.</p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="main-offering" class="container mx-auto px-4 py-16">
+            <h2 class="text-4xl font-bold mb-8 text-center main-color-text">Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Done-for-You Social Media Management Card -->
+                <div class="bg-white p-8 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                    <h3 class="text-2xl font-semibold mb-4 main-color-text">Done-for-You Social Media Management</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Social Media Audit</li>
+                        <li>Profile Optimization</li>
+                        <li>Content Creation (graphics, stories & reels)</li>
+                        <li>Copywriting (captions that connect & convert)</li>
+                        <li>Audience & Competitor Analysis</li>
+                        <li>Trend Research</li>
+                        <li>Scheduling & Posting</li>
+                        <li>Hashtag & Keyword Research</li>
+                        <li>Psychology-Backed and Data-Driven Strategies</li>
+                        <li>Engagement Management (DMs & comments)</li>
+                        <li>Monthly Report & Strategy Calls</li>
+                    </ul>
+                </div>
+                <!-- Meta Ads Strategy + Management Card -->
+                <div class="bg-white p-8 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                    <h3 class="text-2xl font-semibold mb-4 main-color-text">Meta Ads Strategy + Management</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Audience & Market Research</li>
+                        <li>Campaign Strategy & Planning</li>
+                        <li>Ad Copywriting + Creative Direction</li>
+                        <li>Campaign Setup & A/B Testing</li>
+                        <li>Pixel & Tracking Setup</li>
+                        <li>Budget Optimization</li>
+                        <li>Weekly Performance Monitoring</li>
+                        <li>Detailed Reports + Action Steps</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sample Works Section -->
+        <section id="sample-works" class="container mx-auto px-4 py-16">
+            <h2 class="text-4xl font-bold mb-8 text-center main-color-text">Sample Works</h2>
+            
+            <!-- Medical and Dental Clinics -->
+            <div class="mb-12">
+                <h3 class="text-3xl font-bold mb-6 main-color-text text-center md:text-left">Medical and Dental Clinics</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                        <img src="https://imgur.com/i7rXjCN.png" alt="Sample Work for Medical Clinic 1" class="w-full h-auto rounded-lg mb-4">
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                        <img src="https://imgur.com/lGgtBwI.png" alt="Sample Work for Medical Clinic 2" class="w-full h-auto rounded-lg mb-4">
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                        <img src="https://imgur.com/E3UT5TJ.png" alt="Sample Work for Medical Clinic 3" class="w-full h-auto rounded-lg mb-4">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coaching -->
+            <div class="mb-12">
+                <h3 class="text-3xl font-bold mb-6 main-color-text text-center md:text-left">Coaching</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                        <img src="https://imgur.com/MrixXaA.png" alt="Sample Work for Coaching 1" class="w-full h-auto rounded-lg mb-4">
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                        <img src="https://imgur.com/WBblAhD.png" alt="Sample Work for Coaching 2" class="w-full h-auto rounded-lg mb-4">
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                        <img src="https://imgur.com/lODR8aX.png" alt="Sample Work for Coaching 3" class="w-full h-auto rounded-lg mb-4">
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                        <img src="https://imgur.com/IgcypJs.png" alt="Sample Work for Coaching 4" class="w-full h-auto rounded-lg mb-4">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real Estate -->
+            <div class="mb-12">
+                <h3 class="text-3xl font-bold mb-6 main-color-text text-center md:text-left">Real Estate</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                        <img src="https://imgur.com/0KEzbou.png" alt="Sample Work for Real Estate 1" class="w-full h-auto rounded-lg mb-4">
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                        <img src="https://imgur.com/y3LSDEs.png" alt="Sample Work for Real Estate 2" class="w-full h-auto rounded-lg mb-4">
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                        <img src="https://imgur.com/CfXKU2m.png" alt="Sample Work for Real Estate 3" class="w-full h-auto rounded-lg mb-4">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skin Care Products -->
+            <div class="mb-12">
+                <h3 class="text-3xl font-bold mb-6 main-color-text text-center md:text-left">Skin Care Products</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                        <img src="https://imgur.com/mX8CSgO.png" alt="Sample Work for Skincare 1" class="w-full h-auto rounded-lg mb-4">
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                        <img src="https://imgur.com/s8yVc8c.png" alt="Sample Work for Skincare 2" class="w-full h-auto rounded-lg mb-4">
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                        <img src="https://imgur.com/Zuecj3u.png" alt="Sample Work for Skincare 3" class="w-full h-auto rounded-lg mb-4">
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                        <img src="https://imgur.com/V2BGstS.png" alt="Sample Work for Skincare 4" class="w-full h-auto rounded-lg mb-4">
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                        <img src="https://imgur.com/hn4ucbY.png" alt="Sample Work for Skincare 5" class="w-full h-auto rounded-lg mb-4">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Posters -->
+            <div class="mb-12">
+                <h3 class="text-3xl font-bold mb-6 main-color-text text-center md:text-left">Posters</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                        <img src="https://imgur.com/dOVuLPa.png" alt="Poster Sample 1" class="w-full h-auto rounded-lg mb-4">
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                        <img src="https://imgur.com/R9g4jeE.png" alt="Poster Sample 2" class="w-full h-auto rounded-lg mb-4">
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                        <img src="https://imgur.com/bsniY58.png" alt="Poster Sample 3" class="w-full h-auto rounded-lg mb-4">
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
+                        <img src="https://imgur.com/ITP2T3c.png" alt="Poster Sample 4" class="w-full h-auto rounded-lg mb-4">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Case Studies Section -->
+        <section id="case-studies" class="container mx-auto px-4 py-16">
+            <h2 class="text-4xl font-bold mb-8 text-center main-color-text">Case Studies</h2>
+            <div class="bg-white p-8 rounded-xl shadow-lg text-gray-700">
+                <h3 class="text-2xl font-bold mb-4 main-color-text">Case Study: A Bathroom Remodel Company's Facebook Growth</h3>
+                <p class="mb-4 text-lg"><strong>Challenge:</strong></p>
+                <p class="mb-4 text-lg">The brand had inconsistent posting, no clear social media strategy, and no existing assets to use for content. This made it difficult to engage their audience or grow their online presence.</p>
+                <p class="mb-4 text-lg"><strong>Solution:</strong></p>
+                <p class="mb-4 text-lg">I developed a content strategy with clearly defined content pillars based on market research. Using free assets from the web, I created high-quality visuals and implemented a consistent weekly posting schedule. This approach allowed us to track what type of content resonated with the audience and optimize accordingly. Paid Meta ads were also used strategically to amplify reach and attract potential clients.</p>
+                <p class="mb-4 text-lg"><strong>Results:</strong></p>
+                <p class="mb-4 text-lg">Over two and a half months, the brand experienced:</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-2 mb-8">
+                    <li><strong>7,000%</strong> increase in followers</li>
+                    <li><strong>1,600%</strong> increase in content interactions</li>
+                    <li><strong>200%</strong> increase in reach</li>
+                    <li><strong>84.1%</strong> increase in website link clicks</li>
+                    <li><strong>27.4%</strong> increase in video views</li>
+                </ul>
+                <p class="text-lg mb-2">The strategy not only grew the brand’s audience but also drove meaningful engagement and website traffic, positioning the company as a trusted authority in bathroom remodeling.</p>
+                <p class="text-sm italic text-gray-500">Note: These results were achieved through a combination of organic content and strategically targeted Meta ads, not just organic growth.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+                    <img src="https://imgur.com/yPGPtj4.png" alt="Case study visual 1" class="w-full h-auto rounded-lg shadow-md">
+                    <img src="https://imgur.com/KnZQr01.png" alt="Case study visual 2" class="w-full h-auto rounded-lg shadow-md">
+                    <img src="https://imgur.com/IH6mP3y.png" alt="Case study visual 3" class="w-full h-auto rounded-lg shadow-md">
+                    <img src="https://imgur.com/1oSJsLN.png" alt="Case study visual 4" class="w-full h-auto rounded-lg shadow-md">
+                    <img src="https://imgur.com/Jb0r3Yf.png" alt="Case study visual 5" class="w-full h-auto rounded-lg shadow-md">
+                </div>
+            </div>
+            <!-- Second Case Study Block -->
+            <div class="bg-white p-8 rounded-xl shadow-lg text-gray-700 mt-8">
+                <h3 class="text-2xl font-bold mb-4 main-color-text">Case Study: A Marketing Agency's Facebook Growth</h3>
+                <p class="mb-4 text-lg"><strong>Challenge:</strong></p>
+                <p class="mb-4 text-lg">The brand had inconsistent posting, no clear social media strategy, and only shared client results, wins, and testimonials. There was no consistent posting schedule, which limited engagement and audience growth.</p>
+                <p class="mb-4 text-lg"><strong>Solution:</strong></p>
+                <p class="mb-4 text-lg">I developed a content strategy that positioned the brand not just as a marketing agency, but also as an educational resource for their audience. Content pillars were created to reframe client results, wins, and testimonials into educational posts while also addressing common objections from potential clients. High-quality visuals were designed, and a consistent weekly posting schedule was implemented to track what content performed best.</p>
+                <p class="mb-4 text-lg"><strong>Results:</strong></p>
+                <p class="mb-4 text-lg">Over five months, the brand experienced:</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-2 mb-8">
+                    <li><strong>203.9%</strong> increase in views</li>
+                    <li><strong>190.7%</strong> increase in reach</li>
+                    <li><strong>140.8%</strong> increase in content interactions</li>
+                    <li><strong>307.9%</strong> increase in link clicks, potentially bringing in new clients</li>
+                </ul>
+                <p class="text-lg mb-2">The strategy not only grew the brand’s audience but also drove meaningful engagement and website traffic, positioning the company as a trusted authority in bathroom remodeling.</p>
+                <p class="text-sm italic text-gray-500">Note: These results were achieved through a combination of strategic content planning and consistent posting, not just organic sharing of client wins.</p>
+                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+                    <img src="https://imgur.com/t0KJfy3.png" alt="Marketing Agency Case Study Visual 1" class="w-full h-auto rounded-lg shadow-md">
+                    <img src="https://imgur.com/j0ed66Z.png" alt="Marketing Agency Case Study Visual 2" class="w-full h-auto rounded-lg shadow-md">
+                    <img src="https://imgur.com/II4BI7h.png" alt="Marketing Agency Case Study Visual 3" class="w-full h-auto rounded-lg shadow-md">
+                    <img src="https://imgur.com/QJ8lgh5.png" alt="Marketing Agency Case Study Visual 4" class="w-full h-auto rounded-lg shadow-md">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container mx-auto px-4 py-16 text-center">
+            <h2 class="text-4xl font-bold mb-4 main-color-text">Let’s Connect & Grow Your Brand</h2>
+            <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">Whether you’re ready to scale with strategy or just exploring options, I’d love to hear from you.</p>
+
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 text-gray-700 text-lg mb-8">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-6 h-6 main-color-text" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z" />
+                    </svg>
+                    <p><strong>Gmail:</strong> socialsbyzhyl@gmail.com</p>
+                </div>
+                <a href="https://www.facebook.com/profile.php?id=61579927820658" target="_blank" class="flex items-center space-x-2 main-color-text hover:underline">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2v-2.16c0-2.18 1.4-3.5 3.56-3.56.97 0 1.76.08 1.99.11v2.58h-1.63c-1.01 0-1.21.48-1.21 1.18V12h2.89l-.47 3H13v6.8A10.012 10.012 0 0022 12z" />
+                    </svg>
+                    <p><strong>Facebook:</strong> Sozhyls</p>
+                </a>
+                <div class="flex items-center space-x-2">
+                    <svg class="w-6 h-6 main-color-text" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.54.43 3.01 1.25 4.33l-1.29 4.71 4.81-1.27c1.28.71 2.73 1.09 4.98 1.09h.01c5.45 0 9.91-4.46 9.91-9.92 0-5.47-4.46-9.91-9.91-9.91zM17.58 15.65c-.24.5-1.45.64-1.92.65-.43.01-.96.02-1.51-.43-.55-.45-2.07-.94-3.13-2.67-.85-1.4-.69-2.16-.5-2.5l.39-.65c.19-.32.25-.45.39-.71.14-.26.07-.49-.07-.65-.14-.15-.49-.4-.7-.4-.22 0-.47.05-.72.05s-.46.04-.7.4-.76 1.77-.76 2.14.77 2.45.88 2.59c.1 0 1.48 2.37 3.55 3.25 1.5.64 2.65.91 3.24.91.43 0 .82-.19 1.12-.32.3-.13.56-.39.64-.53.08-.14.23-.42.26-.53.03-.12.03-.22-.05-.34-.08-.11-.29-.18-.61-.34z" />
+                    </svg>
+                    <p><strong>WhatsApp:</strong> +63 912 497 3147</p>
+                </div>
+            </div>
+            
+            <!-- CTA Button -->
+            <!--
+            NOTE:
+            - This CTA button now links directly to your Google Calendar.
+            -->
+            <a id="cta-button" href="https://calendar.app.google/tUGUu6RgPiopXZxS9" target="_blank" class="inline-block px-10 py-5 text-xl font-bold text-white main-color-bg rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300">
+                Get in Touch
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-color-bg text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Social Media Portfolio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // Toggle mobile menu
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    // Close mobile menu after clicking a link
+                    if (!mobileMenu.classList.contains('hidden')) {
+                         mobileMenu.classList.add('hidden');
+                    }
+                });
+            });
+
+            // Highlight active navigation link based on scroll position
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.href.includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
